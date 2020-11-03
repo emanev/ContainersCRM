@@ -13,6 +13,10 @@ namespace ContainersCRM
 {
     public class Startup
     {
+        /// <summary>
+        /// fgdfdgdg
+        /// </summary>
+        /// <param name="configuration"></param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
