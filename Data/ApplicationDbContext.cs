@@ -21,7 +21,7 @@ namespace ContainersCRM.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.;Database=ContainersCRM;Integrated Security=true;");
+                optionsBuilder.UseSqlServer(@"Server=LAPTOP-722117P0\EMO;Database=ContainersCRM;Integrated Security=true;");
             }
         }
 
