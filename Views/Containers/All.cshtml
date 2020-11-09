@@ -1,5 +1,30 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model ContainersCRM.ViewModels.ContainersViewModel
+
+@{ this.ViewData["Title"] = "All"; }
+
+<h1>@this.ViewData["Title"]</h1>
+
+<div>
+    <h4>All Containers</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.InventarNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.InventarNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContainerCapacityType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContainerCapacityType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContainerColourType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContainerColourType)
+        </dd>       
+    </dl>
+</div>
