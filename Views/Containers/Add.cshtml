@@ -1,0 +1,40 @@
+﻿@model ContainersCRM.ViewModels.ContainersInputModel
+
+
+@{ this.ViewData["Title"] = "AddContainer"; }
+
+<h1>@this.ViewData["Title"]</h1>
+
+<div class="form-group">
+    <label asp-for="ContainerColourType" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+        <select asp-for="ContainerColourType" asp-items="Html.GetEnumSelectList<ContainersCRM.ViewModels.Containers.Enums.ContainerColour>()">
+            <option selected="selected" value="">Please select</option>
+        </select>
+        <span asp-validation-for="ContainerColourType" class="text-danger" />
+    </div>
+</div>
+
+<div class="form-group">
+    <label asp-for="ContainerCapacityType" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+        <select asp-for="ContainerCapacityType" asp-items="Html.GetEnumSelectList<ContainersCRM.ViewModels.Containers.Enums.ContainerCapacity>()">
+            <option selected="selected" value="">Please select</option>
+        </select>
+        <span asp-validation-for="ContainerCapacityType" class="text-danger" />
+    </div>
+</div>
+
+<div class="form-group">
+    <label asp-for="InventarNumber" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+        <input asp-for="InventarNumber">
+        <span asp-validation-for="InventarNumber" class="text-danger" />
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <button type="submit" class="btn btn-default">Add</button>
+    </div>
+</div>

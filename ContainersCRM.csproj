@@ -13,4 +13,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Views\Warehouse\" />
+    <Folder Include="Views\Schedule\" />
+  </ItemGroup>
+
 </Project>
