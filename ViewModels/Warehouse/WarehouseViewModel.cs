@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ContainersCRM.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,9 @@ using System.Threading.Tasks;
 namespace ContainersCRM.ViewModels.Warehouse
 {
     public class WarehouseViewModel
-    {
+    {        
+        public int Id { get; set; }
+
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
@@ -32,8 +35,10 @@ namespace ContainersCRM.ViewModels.Warehouse
         // To Do with actual userId and type
         public int UserId { get; set; } = 1;
 
-        public int CityId { get; set; }
+        // Remove from database
+        //public int CityId { get; set; }
 
-        public int DistrictId { get; set; }
+        [EnumDataType(typeof(District))]        
+        public District DistrictName { get; set; }        
     }
 }
