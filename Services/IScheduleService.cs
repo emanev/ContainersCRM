@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ContainersCRM.Services
 {
-    public class IScheduleService
+    public interface IScheduleService
     {
     }
 }

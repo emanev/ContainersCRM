@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ContainersCRM.Services;
 using ContainersCRM.ViewModels.Warehouse;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,14 @@ namespace ContainersCRM.Controllers
 {
     public class WarehouseController : Controller
     {
+        private readonly IWarehouseService warehouseService;
+
+        public WarehouseController(WarehouseService warehouseService)
+        {
+            this.warehouseService = warehouseService;
+        }
+
+
         public IActionResult All()
         {
             return View();

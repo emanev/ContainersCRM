@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ContainersCRM.Services
 {
-    public interface ISRSObjectIndustrialService
+    public class WarehouseService  : IWarehouseService
     {
     }
 }
