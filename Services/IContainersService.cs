@@ -8,10 +8,8 @@ namespace ContainersCRM.Services
 {
     public interface IContainersService
     {
-
         void Create(ContainersInputModel model);
 
         IEnumerable<ContainersViewModel> GetAll();
-
     }
 }
